@@ -1,0 +1,120 @@
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  color: #2d2d2d;
+  font-family: 'Times New Roman', Times, serif
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  
+.content {
+    flex: 1;
+  }
+
+/* padding */
+.p-0{
+    padding: 0;
+}
+
+/* Text Align */
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.title{
+  color: #fff;
+  font-size: 16px;
+}
+
+/* float */
+.f-left{
+    float: left;
+}
+
+.f-right{
+    float: right;
+    margin: 0 0 0 10px;
+    line-height: 30px;
+}
+
+.f-14{
+    font-size: 14px;
+}
+
+
+/* margin */
+.mtb-20{
+    margin: 20px 0;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: #ff3131;
+  text-decoration: none;
+}
+a:hover {
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
+
+.splash_bg{
+  background: #2f4f6e;
+}
+
+.logo{
+  width: 150px;
+  height: auto;
+  margin: 25% 0 0 0;
+}
+
+.but1{
+  background: #daab6c;
+  color: #2f4f6e;
+  border:solid 2px #daab6c;
+  font-size: 18px;
+  padding: 15px 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+}
+
+/* clear */
+.clear{clear: both;}
+.clear5x{clear: both; height: 5px;}
+.clear10x{clear: both; height: 10px;}
+.clear15x{clear: both; height: 15px;}
+.clear20x{clear: both; height: 20px;}
+.clear25x{clear: both; height: 25px;}
+.clear30x{clear: both; height: 30px;}
+  
+
+
+/*iPod, Tablet Devices*/
+@media all and (max-width: 1200px) and (min-width: 480px) {
+
+}
+
+/*Mobile Devices.*/
+@media all and (max-width: 480px) and (min-width: 320px) {
+
+
+}
