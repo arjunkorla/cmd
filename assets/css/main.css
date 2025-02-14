@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 700;
 }
 
+h2{
+  color: #fff;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -32,6 +36,10 @@ h1, h2, h3, h4, h5, h6{
     text-align: left;
 }
 
+.text-right{
+  text-align: right;
+}
+
 .text-center{
   text-align: center;
 }
@@ -40,6 +48,12 @@ h1, h2, h3, h4, h5, h6{
   color: #fff;
   font-size: 16px;
 }
+
+.title2{
+  color: #2f4f6e;
+  font-size: 16px;
+}
+
 
 /* float */
 .f-left{
@@ -62,6 +76,10 @@ h1, h2, h3, h4, h5, h6{
     margin: 20px 0;
 }
 
+.mt5{
+  margin-top: 5%;
+}
+
 a:link,
 a:visited,
 a:active {
@@ -78,23 +96,68 @@ a:hover {
   background: #2f4f6e;
 }
 
+.regular_bg{
+  background: #f6f7f7;
+}
+
+
+
 .logo{
   width: 150px;
   height: auto;
-  margin: 25% 0 0 0;
+  margin: 15% 0 0 0;
 }
 
-.but1{
+.logo2{
+  width: 150px;
+  height: auto;
+  margin: 5% 0 0 0;
+}
+
+.but1, .but2{
   background: #daab6c;
   color: #2f4f6e;
   border:solid 2px #daab6c;
   font-size: 18px;
-  padding: 15px 30px;
+  padding: 10px 30px;
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 8px;
   -webkit-border-radius:8px;
   -moz-border-radius:8px;
+  width: 100%;
+}
+
+.but2{color: #fff !important;}
+
+.form-cont{
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+.my-label{
+  width: 100%;
+  margin: 0 0 10px 0;
+  color: #26292c;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.my-input{
+  border-radius: 4px;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  background: #fff;
+  border: solid 1px #ddd;
+  padding: 10px 20px;
+  color: #26292c;
+  font-size: 18px;
+  width: 100%;
+}
+
+.my-input:focus{
+  outline: none;
+  border: solid 1px #daab6c;
 }
 
 /* clear */
@@ -106,7 +169,7 @@ a:hover {
 .clear25x{clear: both; height: 25px;}
 .clear30x{clear: both; height: 30px;}
   
-
+footer{margin: 0 0 50px 0;}
 
 /*iPod, Tablet Devices*/
 @media all and (max-width: 1200px) and (min-width: 480px) {
