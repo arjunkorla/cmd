@@ -1,10 +1,10 @@
-
 html,
 body {
   height: 100%;
   margin: 0;
   color: #2d2d2d;
   font-family: 'Times New Roman', Times, serif
+
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -54,6 +54,13 @@ h2{
   font-size: 16px;
 }
 
+.title3{
+  font-size: 20px;
+}
+
+.gray-text{
+  color: #6d6e71;
+}
 
 /* float */
 .f-left{
@@ -99,8 +106,6 @@ a:hover {
 .regular_bg{
   background: #f6f7f7;
 }
-
-
 
 .logo{
   width: 150px;
@@ -160,6 +165,46 @@ a:hover {
   border: solid 1px #daab6c;
 }
 
+.dash_icons{
+  width: 50%;
+  height: auto;
+}
+
+.applicant{
+  margin: 0 0 0 -30px;
+}
+
+.applicant li{
+  list-style: none;
+  color: #26292c;
+  display: flex;
+  flex-wrap: wrap;
+  background: #dfebf5;
+  padding: 10px 30px 4px 30px;
+  border-radius: 12px 0 0 12px;
+  -moz-border-radius:12px 0 0 12px;
+  -webkit-border-radius:12px 0 0 12px;
+  text-align: right;
+  border-right: solid 6px #316ab3;
+  margin: 0 0 15px 0;
+}
+
+.applicant li h2{color: #26292c;}
+
+.appli_num{
+  font-size: 30px;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  background: #316ab3;
+  border-radius: 50px;
+  -moz-border-radius:50px;
+  -webkit-border-radius:50px;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 20px 0 0;
+}
+
 /* clear */
 .clear{clear: both;}
 .clear5x{clear: both; height: 5px;}
@@ -169,7 +214,7 @@ a:hover {
 .clear25x{clear: both; height: 25px;}
 .clear30x{clear: both; height: 30px;}
   
-footer{margin: 0 0 50px 0;}
+footer{margin: 50px 0 50px 0;}
 
 /*iPod, Tablet Devices*/
 @media all and (max-width: 1200px) and (min-width: 480px) {
@@ -179,5 +224,9 @@ footer{margin: 0 0 50px 0;}
 /*Mobile Devices.*/
 @media all and (max-width: 480px) and (min-width: 320px) {
 
+.dash_icons{
+    width: 100%;
+    height: auto;
+  }
 
 }
