@@ -143,6 +143,25 @@ a:hover {
 
 .but2{color: #fff !important;}
 
+.but3, .but4{
+  background: #818285;
+  color: #fff;
+  border:none;
+  font-size: 16px;
+  padding: 5px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  width: 170px;
+  display:inline-block;
+}
+
+.but4{
+  background: #7cc242;
+}
+
 .form-cont{
   width: 100%;
   margin: 0 0 20px 0;
@@ -230,10 +249,15 @@ footer{margin: 50px 0 50px 0;}
   flex-wrap: nowrap;
 }
 
-.data_title{
+.data_title, .data_title2{
   color: #2f4f6e;
   font-size: 20px;
   padding: 5px 0px;
+}
+
+.data_title2{
+  color: #231f20;
+  font-weight: bold;
 }
 
 .data2{
@@ -249,6 +273,23 @@ footer{margin: 50px 0 50px 0;}
 .cal_ico{
   width: 20px;
   height: auto;
+}
+
+.paging{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.paging li{
+  list-style: none;
+  background: #edefee;
+  padding: 5px 10px;
+  margin: 0 2px;
+}
+
+.paging li a{
+  display: block;
 }
 
 /*iPod, Tablet Devices*/
