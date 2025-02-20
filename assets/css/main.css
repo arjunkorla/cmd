@@ -99,6 +99,14 @@ h2{
   margin-top: 5%;
 }
 
+.mt-50{
+  margin-top: 50px;
+}
+
+.mr-25{
+  margin-right: 25px;
+}
+
 a:link,
 a:visited,
 a:active {
@@ -220,9 +228,11 @@ a:hover {
   margin: 0 0 15px 0;
 }
 
+.applicant li:hover{background: #fcb040;}
+
 .applicant li h2{color: #26292c;}
 
-.appli_num{
+.appli_num, .appli_num2{
   font-size: 30px;
   color: #fff;
   width: 50px;
@@ -234,6 +244,10 @@ a:hover {
   text-align: center;
   font-weight: bold;
   margin: 10px 20px 0 0;
+}
+
+.appli_num2{
+  background: #6b65ad;
 }
 
 .search_icon{
@@ -313,6 +327,123 @@ footer{margin: 50px 0 50px 0;}
 .paging li:hover, .paging li a:hover{
   background: #2d2d2d;
   color: #fff;
+}
+
+.comment{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.comment img{
+  width: auto;
+  height: 30px;
+  margin: 0 10px 0 0;
+}
+
+.comment_count, .comment_count:link, .comment_count:visited, .comment_count:active, .comment_count:hover{
+  background: #dfebf5;
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  border-radius: 20px;
+}
+
+/* calender CSS */
+.container_calender {
+  display: inline-block;
+  background-color:#fff;
+  border-radius: 35px;
+  padding: 0 1em;
+}
+
+header {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.header-display {
+  display: flex;
+  align-items: center;
+}
+
+.header-display p {
+  color:#daab6c;
+  margin: 5px;
+  font-size: 1.2rem;
+  word-spacing: 0.5rem;
+}
+
+pre {
+  padding: 10px;
+  margin: 0;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color:#daab6c;
+}
+
+.days,
+.week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin: auto;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+.week div,
+.days div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3em;
+  border-radius: 100%;
+}
+.days div:hover {
+  background:#daab6c;
+  color: rgb(25, 25, 201);
+  cursor: pointer;
+}
+.week div {
+  opacity: 0.5;
+}
+.current-date {
+  background-color:#daab6c;
+  color:#fff;
+}
+.display-selected {
+  margin-bottom: 10px;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.primary{
+  margin: 0 0 0 -30px;
+}
+
+.primary li{
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 5px;
+  border: solid 1px #dedfe0;
+  color: #6d6e71;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 35px;
+  margin: 3px 0;
+}
+
+.primary li img{
+  width: auto;
+  height: 40px;
 }
 
 /*iPod, Tablet Devices*/
