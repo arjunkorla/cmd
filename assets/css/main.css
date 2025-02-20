@@ -139,7 +139,7 @@ a:hover {
   margin: 5% 0 0 0;
 }
 
-.but1, .but2{
+.but1, .but2, .but5{
   background: #daab6c;
   color: #2f4f6e;
   border:solid 2px #daab6c;
@@ -151,6 +151,12 @@ a:hover {
   -webkit-border-radius:8px;
   -moz-border-radius:8px;
   width: 100%;
+}
+
+.but5{
+  background: #39b54a;
+  color: #fff;
+  border:solid 2px #39b54a;
 }
 
 .but2{color: #fff !important;}
@@ -204,9 +210,15 @@ a:hover {
   border: solid 1px #daab6c;
 }
 
-.dash_icons{
+.dash_icons, .dash_icons2{
   width: 50%;
   height: auto;
+}
+
+.dash_icons2{
+  border-radius: 8px;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
 }
 
 .applicant{
@@ -296,9 +308,15 @@ footer{margin: 50px 0 50px 0;}
   width: 50%;
 }
 
-.cal_ico{
+.cal_ico, .cal2_ico{
   width: 20px;
   height: auto;
+}
+
+.cal2_ico{
+  width: auto;
+  height: 20px !important;
+  margin: 0 10px 0 0;
 }
 
 .paging{
@@ -444,6 +462,22 @@ pre {
 .primary li img{
   width: auto;
   height: 40px;
+}
+
+.primary_bt{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.bt_ico{
+  width: auto;
+  height: 80px;
+}
+
+.my_flex{
+  display: flex;
 }
 
 /*iPod, Tablet Devices*/

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+
+       <title>ECMD | Work Track Management System</title>
+
+       <!--favicon icon-->
+       <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="32x32" />
+
+       <!-- Add Bootstrap CSS -->
+       <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+       <!-- CSS -->
+       <link rel="stylesheet" type="text/css" href="assets/css/main.css" media="all">
+
+   </head>
+   <body class="regular_bg">
+
+    <div class="wrapper">
+        <div class="content">
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="text-right title3 col-md-2 col-9 offset-md-6 mt5">
+                            <strong>Osman Alsalem</strong>
+                            <p class="gray-text">Examinar</p>
+                        </div>
+                        <div class="col-md-1 col-3 mt5 text-right">
+                            <img src="assets/images/profile.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3">
+                            <a href="index.html"><img src="assets/images/logo2.png" alt="" class="logo2"></a>
+                            <h5 class="title2 mtb-20">Work Tracking Management System</h5>
+                        </div>
+                        
+                        <div class="col-md-6 offset-md-3">
+                            <h2 class="black-text"><span class="f-20">App. No.</span>1234/2025</h2>
+                            
+                            <div class="data">
+                                <div class="data_title">Meterial Type</div><div class="data2">concret</div>
+                            </div>
+                            <div class="clear10x"></div>
+
+                            <div class="data">
+                                <div class="data_title">Laboratory</div><div class="data2">concret</div>
+                            </div>
+                            <div class="clear10x"></div>
+
+                            <div class="data">
+                                <div class="data_title"> <img src="assets/images/cal1.png" alt="" class="cal_ico"> Submission date</div><div class="data2">15.03.2022</div>
+                            </div>
+                            <div class="clear10x"></div>
+
+                            <div class="data">
+                                <div class="data_title"> <img src="assets/images/cal2.png" alt="" class="cal_ico"> Start date</div><div class="data2">15.03.2022</div>
+                            </div>
+                            <div class="clear10x"></div>
+
+                            <div class="data">
+                                <div class="data_title"><img src="assets/images/cal3.png" alt="" class="cal_ico"> End date</div><div class="data2">23.03.2022</div>
+                            </div>
+                            <div class="clear10x"></div>
+
+                            <div class="data">
+                                <div class="data_title"><img src="assets/images/cal4.png" alt="" class="cal_ico"> Actual Duration</div><div class="data2">22</div>
+                            </div>
+                            <div class="clear10x"></div>
+
+                            <div class="form-cont">
+                                <label for="" class="my-label">Office Remarks</label>
+                                <textarea name="" id="" rows="5" class="my-input"></textarea>
+                            </div>
+
+                            <!-- Calender -->
+                            <div class="container_calender">
+                                <div class="calendar">
+                                  <header>
+                                    <pre class="left">◀</pre>
+                                    <div class="header-display">
+                                      <p class="display">""</p>
+                                    </div>
+                                    <pre class="right">▶</pre>
+                                  </header>
+                              
+                                  <div class="week">
+                                    <div>Su</div>
+                                    <div>Mo</div>
+                                    <div>Tu</div>
+                                    <div>We</div>
+                                    <div>Th</div>
+                                    <div>Fr</div>
+                                    <div>Sa</div>
+                                  </div>
+                                  <div class="days"></div>
+                                </div>
+                                <div class="display-selected">
+                                  <p class="selected"></p>
+                                </div>
+                            </div>
+
+                            <div class="clear20x"></div>  
+                            <div class="form-cont">
+                                <label for="" class="my-label">Tester Notice</label>
+                                <textarea name="" id="" rows="2" class="my-input"></textarea>
+                            </div>
+
+                            <div class="clear20x"></div>                       
+                            <div class="form-cont">
+                                <button class="but5" onclick="window.location.href='#'">WORK DONE</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="text-center"><img src="assets/images/cmd_footer.png" alt=""></div>
+                        <div class="clear20x"></div>
+                        &copy; Copyright 2025 ECMD, All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+   </body>
+
+<script type="text/javascript">
+let display = document.querySelector(".display");
+let days = document.querySelector(".days");
+let previous = document.querySelector(".left");
+let next = document.querySelector(".right");
+let selected = document.querySelector(".selected");
+
+let date = new Date();
+
+let year = date.getFullYear();
+let month = date.getMonth();
+
+function displayCalendar() {
+  const firstDay = new Date(year, month, 1);
+
+  const lastDay = new Date(year, month + 1, 0);
+
+  const firstDayIndex = firstDay.getDay(); //4
+
+  const numberOfDays = lastDay.getDate(); //31
+
+  let formattedDate = date.toLocaleString("en-US", {
+    month: "long",
+    year: "numeric"
+  });
+
+  display.innerHTML = `${formattedDate}`;
+
+  for (let x = 1; x <= firstDayIndex; x++) {
+    const div = document.createElement("div");
+    div.innerHTML += "";
+
+    days.appendChild(div);
+  }
+
+  for (let i = 1; i <= numberOfDays; i++) {
+    let div = document.createElement("div");
+    let currentDate = new Date(year, month, i);
+
+    div.dataset.date = currentDate.toDateString();
+
+    div.innerHTML += i;
+    days.appendChild(div);
+    if (
+      currentDate.getFullYear() === new Date().getFullYear() &&
+      currentDate.getMonth() === new Date().getMonth() &&
+      currentDate.getDate() === new Date().getDate()
+    ) {
+      div.classList.add("current-date");
+    }
+  }
+}
+
+// Call the function to display the calendar
+displayCalendar();
+
+previous.addEventListener("click", () => {
+  days.innerHTML = "";
+  selected.innerHTML = "";
+
+  if (month < 0) {
+    month = 11;
+    year = year - 1;
+  }
+
+  month = month - 1;
+
+  date.setMonth(month);
+
+  displayCalendar();
+  displaySelected();
+});
+
+next.addEventListener("click", () => {
+  days.innerHTML = "";
+  selected.innerHTML = "";
+
+  if (month > 11) {
+    month = 0;
+    year = year + 1;
+  }
+
+  month = month + 1;
+  date.setMonth(month);
+
+  displayCalendar();
+  displaySelected();
+});
+
+function displaySelected() {
+  const dayElements = document.querySelectorAll(".days div");
+  dayElements.forEach((day) => {
+    day.addEventListener("click", (e) => {
+      const selectedDate = e.target.dataset.date;
+      selected.innerHTML = `Selected Date : ${selectedDate}`;
+    });
+  });
+}
+displaySelected();
+</script>
+
+   <script src="assets/js/jquery.min.js"></script>
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
+</html>
