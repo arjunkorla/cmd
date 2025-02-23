@@ -193,7 +193,11 @@ a:hover {
   font-weight: bold;
 }
 
-.my-input{
+.my-label2{
+  line-height: 40px;
+}
+
+.my-input, .my-input2{
   border-radius: 4px;
   -moz-border-radius:4px;
   -webkit-border-radius:4px;
@@ -205,9 +209,13 @@ a:hover {
   width: 100%;
 }
 
-.my-input:focus{
+.my-input:focus, .my-input2:focus{
   outline: none;
   border: solid 1px #daab6c;
+}
+
+.my-input2{
+  width: 60%;
 }
 
 .dash_icons, .dash_icons2{
@@ -479,6 +487,64 @@ pre {
 .my_flex{
   display: flex;
 }
+
+.top_list{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top_list li{
+ margin: 35px 5px 0 5px;
+}
+
+.top_list li img{
+  width: 40px;
+  height: auto;
+ }
+
+ .add_title{
+  background:#eddec9;
+  padding: 10px 20px;
+  margin: 30px 0 0 40px;
+ }
+
+ .cont_bg{
+  background: #edefee;
+  padding: 20px;
+  color: #2f4f6e;
+  font-weight: 600;
+ }
+
+ .title_ico{
+  width: 45px;
+  height: auto;
+  margin:0 10px 0 0;
+ }
+
+ .add_button{
+  background: #fff;
+  color: #2f4f6e;
+  font-weight: 600;
+  border-radius: 4px;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  border:solid 1px #c3c6c5;
+  margin: 0 5px;
+  padding: 0 10px;
+ }
+
+ .add_button img{
+  width: 25px;
+  height: auto;
+ }
+
+ .form_flex{
+  display: flex;
+  justify-content: space-between;
+ }
+
+ 
 
 /*iPod, Tablet Devices*/
 @media all and (max-width: 1200px) and (min-width: 480px) {
