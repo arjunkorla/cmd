@@ -66,6 +66,10 @@ h2{
   color: #000;
 }
 
+.white-text{
+  color: #fff;
+}
+
 /* float */
 .f-left{
     float: left;
@@ -103,8 +107,16 @@ h2{
   margin-top: 50px;
 }
 
+.mr-5{
+  margin-right:5px;
+}
+
 .mr-25{
   margin-right: 25px;
+}
+
+.w-100{
+  width: 100% !important;
 }
 
 a:link,
@@ -289,6 +301,11 @@ a:hover {
   
 footer{margin: 50px 0 50px 0;}
 
+.footer_logo{
+  width: 100px;
+  height: auto;
+}
+
 .data{
   display: flex;
   justify-content: space-between;
@@ -386,6 +403,7 @@ footer{margin: 50px 0 50px 0;}
   background-color:#fff;
   border-radius: 35px;
   padding: 0 1em;
+  width: 100%;
 }
 
 header {
@@ -544,7 +562,56 @@ pre {
   justify-content: space-between;
  }
 
+ .p5 button{
+  padding: 5px;
+}
  
+.application span{
+  background: #e4e2dc;
+  border: solid 1px #cbcdcd;
+  padding: 2px 10px;
+  margin: 0 5px;
+  color: #000;
+}
+
+.app_status {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.app_status button{
+  width: 45%;
+  margin: 5px;
+  padding: 5px 10px;
+  background: #00aeef;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.bg1{
+  background: #818285 !important;
+}
+
+.bg2{
+  background: #daab6c !important;
+}
+
+.bg3{
+  background: #6ab245 !important;
+}
+
+.gray_bg{
+  background: #939598;
+}
+
+.dates_bg{
+  background: #d1d2d4;
+  padding: 20px;
+  border-radius: 20px;
+}
 
 /*iPod, Tablet Devices*/
 @media all and (max-width: 1200px) and (min-width: 480px) {
