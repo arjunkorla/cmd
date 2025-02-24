@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
 html,
 body {
   height: 100%;
   margin: 0;
   color: #2d2d2d;
-  font-family: 'Times New Roman', Times, serif
-
+  font-family: "Lexend", serif;
 }
 
 h1, h2, h3, h4, h5, h6{
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Lexend", serif;
   font-weight: 700;
 }
 
