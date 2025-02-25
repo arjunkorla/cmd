@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+
+       <title>ECMD | Work Track Management System</title>
+
+       <!--favicon icon-->
+       <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="32x32" />
+
+       <!-- Add Bootstrap CSS -->
+       <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+       <!-- CSS -->
+       <link rel="stylesheet" type="text/css" href="assets/css/main.css" media="all">
+
+   </head>
+   <body class="regular_bg">
+
+    <div class="wrapper">
+        <div class="content">
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="text-right title3 col-md-2 col-9 offset-md-6 mt5">
+                            <strong>Osman Alsalem</strong>
+                            <p class="gray-text">Primary</p>
+                        </div>
+                        <div class="col-md-1 col-3 mt5 text-right">
+                            <img src="assets/images/profile.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3">
+                            <a href="index.html"><img src="assets/images/logo2.png" alt="" class="logo2"></a>
+                            <h5 class="title2 mtb-20">Work Tracking Management System</h5>
+                        </div>
+                        
+                        <div class="col-md-6 offset-md-3">
+                            <ul class="mob_tab_head">
+                                <li>App No.</li>
+                                <li>Status</li>
+                                <li>Submitted to</li>
+                            </ul>
+
+                            <ul class="mob_tab_head">
+                                <li>&nbsp;</li>
+                                <li>&nbsp;</li>
+                                <li>&nbsp;</li>
+                                <li>&nbsp;</li>
+                                <li>&nbsp;</li>
+                                <li>Reception</li>
+                                <li>Department</li>
+                            </ul>
+
+                            <ul class="mob_tab">
+                                <li><h5>1234/2025</h5></li>
+                                <li><button class="status_but">OPEN</button></li>
+                                <li><input type="checkbox"></li>
+                                <li><input type="checkbox"></li>
+                            </ul>
+
+                            <ul class="mob_tab">
+                                <li><h5>1234/2025</h5></li>
+                                <li><button class="status_but bg1">REVIEWED</button></li>
+                                <li><input type="checkbox"></li>
+                                <li><input type="checkbox"></li>
+                            </ul>
+
+                            <ul class="mob_tab">
+                                <li><h5>1234/2025</h5></li>
+                                <li><button class="status_but bg2">IN LAB</button></li>
+                                <li><input type="checkbox"></li>
+                                <li><input type="checkbox"></li>
+                            </ul>
+
+                            <ul class="mob_tab">
+                                <li><h5>1234/2025</h5></li>
+                                <li><button class="status_but bg3">RELEASED</button></li>
+                                <li><input type="checkbox"></li>
+                                <li><input type="checkbox"></li>
+                            </ul>
+
+                            <ul class="mob_tab">
+                                <li><h5>1234/2025</h5></li>
+                                <li><button class="status_but bg1">REVIEWED</button></li>
+                                <li><input type="checkbox"></li>
+                                <li><input type="checkbox"></li>
+                            </ul>
+
+                            <ul class="mob_tab">
+                                <li><h5>1234/2025</h5></li>
+                                <li><button class="status_but bg2">IN LAB</button></li>
+                                <li><input type="checkbox"></li>
+                                <li><input type="checkbox"></li>
+                            </ul>
+                            <div class="clear20x"></div>
+                                                        
+                            <div class="form-cont flex-but">
+                                <button class="but6" onclick="window.location.href='#'">DELETE</button>
+                                <div class="w-25">&nbsp;</div>
+                                <button class="but2" onclick="window.location.href='#'">SEND</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="text-center"><img src="assets/images/cmd_footer.png" alt=""></div>
+                        <div class="clear20x"></div>
+                        &copy; Copyright 2025 ECMD, All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+   </body>
+
+<script type="text/javascript">
+let display = document.querySelector(".display");
+let days = document.querySelector(".days");
+let previous = document.querySelector(".left");
+let next = document.querySelector(".right");
+let selected = document.querySelector(".selected");
+
+let date = new Date();
+
+let year = date.getFullYear();
+let month = date.getMonth();
+
+function displayCalendar() {
+  const firstDay = new Date(year, month, 1);
+
+  const lastDay = new Date(year, month + 1, 0);
+
+  const firstDayIndex = firstDay.getDay(); //4
+
+  const numberOfDays = lastDay.getDate(); //31
+
+  let formattedDate = date.toLocaleString("en-US", {
+    month: "long",
+    year: "numeric"
+  });
+
+  display.innerHTML = `${formattedDate}`;
+
+  for (let x = 1; x <= firstDayIndex; x++) {
+    const div = document.createElement("div");
+    div.innerHTML += "";
+
+    days.appendChild(div);
+  }
+
+  for (let i = 1; i <= numberOfDays; i++) {
+    let div = document.createElement("div");
+    let currentDate = new Date(year, month, i);
+
+    div.dataset.date = currentDate.toDateString();
+
+    div.innerHTML += i;
+    days.appendChild(div);
+    if (
+      currentDate.getFullYear() === new Date().getFullYear() &&
+      currentDate.getMonth() === new Date().getMonth() &&
+      currentDate.getDate() === new Date().getDate()
+    ) {
+      div.classList.add("current-date");
+    }
+  }
+}
+
+// Call the function to display the calendar
+displayCalendar();
+
+previous.addEventListener("click", () => {
+  days.innerHTML = "";
+  selected.innerHTML = "";
+
+  if (month < 0) {
+    month = 11;
+    year = year - 1;
+  }
+
+  month = month - 1;
+
+  date.setMonth(month);
+
+  displayCalendar();
+  displaySelected();
+});
+
+next.addEventListener("click", () => {
+  days.innerHTML = "";
+  selected.innerHTML = "";
+
+  if (month > 11) {
+    month = 0;
+    year = year + 1;
+  }
+
+  month = month + 1;
+  date.setMonth(month);
+
+  displayCalendar();
+  displaySelected();
+});
+
+function displaySelected() {
+  const dayElements = document.querySelectorAll(".days div");
+  dayElements.forEach((day) => {
+    day.addEventListener("click", (e) => {
+      const selectedDate = e.target.dataset.date;
+      selected.innerHTML = `Selected Date : ${selectedDate}`;
+    });
+  });
+}
+displaySelected();
+</script>
+
+   <script src="assets/js/jquery.min.js"></script>
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
+</html>

@@ -47,16 +47,16 @@ h2{
 
 .title{
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .title2{
   color: #2f4f6e;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .title3{
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .gray-text{
@@ -120,6 +120,18 @@ h2{
   width: 100% !important;
 }
 
+.w-80{
+  width: 90% !important;
+}
+
+.w-60{
+  width: 60% !important;
+}
+
+.w-25{
+  width: 25% !important;
+}
+
 a:link,
 a:visited,
 a:active {
@@ -152,11 +164,11 @@ a:hover {
   margin: 5% 0 0 0;
 }
 
-.but1, .but2, .but5{
+.but1, .but2, .but5, .but6{
   background: #daab6c;
   color: #2f4f6e;
   border:solid 2px #daab6c;
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px 30px;
   font-weight: bold;
   text-transform: uppercase;
@@ -164,12 +176,6 @@ a:hover {
   -webkit-border-radius:8px;
   -moz-border-radius:8px;
   width: 100%;
-}
-
-.but5{
-  background: #39b54a;
-  color: #fff;
-  border:solid 2px #39b54a;
 }
 
 .but2{color: #fff !important;}
@@ -180,7 +186,7 @@ a:hover {
   border:none;
   font-size: 16px;
   padding: 5px 20px;
-  font-weight: bold;
+
   text-transform: uppercase;
   border-radius: 4px;
   -webkit-border-radius:4px;
@@ -193,6 +199,18 @@ a:hover {
   background: #7cc242;
 }
 
+.but5{
+  background: #39b54a;
+  color: #fff;
+  border:solid 2px #39b54a;
+}
+
+.but6{
+  background: #ed1c24;
+  border: solid 2px #ed1c24;
+  color: #fff;
+}
+
 .form-cont{
   width: 100%;
   margin: 0 0 20px 0;
@@ -202,7 +220,7 @@ a:hover {
   width: 100%;
   margin: 0 0 10px 0;
   color: #26292c;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -218,7 +236,7 @@ a:hover {
   border: solid 1px #ddd;
   padding: 10px 20px;
   color: #26292c;
-  font-size: 18px;
+  font-size: 14px;
   width: 100%;
 }
 
@@ -266,7 +284,7 @@ a:hover {
 .applicant li h2{color: #26292c;}
 
 .appli_num, .appli_num2{
-  font-size: 30px;
+  font-size: 25px;
   color: #fff;
   width: 50px;
   height: 50px;
@@ -315,7 +333,7 @@ footer{margin: 50px 0 50px 0;}
 
 .data_title, .data_title2{
   color: #2f4f6e;
-  font-size: 20px;
+  font-size: 18px;
   padding: 5px 0px;
 }
 
@@ -326,7 +344,7 @@ footer{margin: 50px 0 50px 0;}
 
 .data2{
   color: #231f20;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   background: #fff;
   border: solid 1px #dadada;
@@ -393,7 +411,7 @@ footer{margin: 50px 0 50px 0;}
   text-align: center;
   color: #000;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
   border-radius: 20px;
 }
@@ -480,7 +498,7 @@ pre {
   padding: 5px;
   border: solid 1px #dedfe0;
   color: #6d6e71;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   line-height: 35px;
   margin: 3px 0;
@@ -592,6 +610,14 @@ pre {
   font-weight: 600;
 }
 
+.status_but{
+  width:110px;
+  padding: 5px 10px;
+  background: #00aeef;
+  border: none;
+  color: #fff;
+}
+
 .bg1{
   background: #818285 !important;
 }
@@ -612,6 +638,39 @@ pre {
   background: #d1d2d4;
   padding: 20px;
   border-radius: 20px;
+}
+
+.report_title{
+  background: #fff;
+  border: solid 2px #cbcdcd;
+  padding: 10px 20px;
+}
+
+.report_title span{color: #316ab3;}
+
+.chart{
+  width: auto;
+  height: 350px;
+}
+
+.mob_tab_head{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  color: #2f4f6e;
+  font-weight: 600;
+}
+
+.mob_tab{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  background: #eff6fd;
+  padding: 10px;
+}
+
+.flex-but{
+display: flex;
 }
 
 /*iPod, Tablet Devices*/
